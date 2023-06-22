@@ -29,6 +29,15 @@
         },
         {
             "productUID": 4,
+            "name": "2 стартера",
+            "description": "Горячая закуска с моцареллой в пшеничной лепешке — это хорошо. А две с разными вкусами — еще лучше. Выберите Грибной с шампиньонами, Сырный с пармезаном и чеддером или Мясной с пикантным соусом бургер",
+            "price": 338,
+            "imageUrl": "https://i.ibb.co/Bjc1qtZ/image.png",
+            "categoryUID": 4,
+            "categoryName": "Комбо"
+        },
+        {
+            "productUID": 5,
             "name": "Додстер Карри",
             "description": "Горячая закуска с цыпленком, ананасом, сладким перцем, моцареллой и пряным соусом карри в тонкой пшеничной лепешке",
             "price": 189,
@@ -37,7 +46,7 @@
             "categoryName": "Закуски"
         },
         {
-            "productUID": 5,
+            "productUID": 6,
             "name": "Острый Додстер",
             "description": "Горячая закуска с цыпленком, перчиком халапеньо, маринованными огурчиками, томатами, моцареллой и соусом барбекю в тонкой пшеничной лепешке",
             "price": 169,
@@ -46,7 +55,7 @@
             "categoryName": "Закуски"
         },
         {
-            "productUID": 6,
+            "productUID": 7,
             "name": "Додстер Песто",
             "description": "Горячая закуска с цыпленком, любимым соусом песто, томатами и моцареллой в тонкой зеленой лепешке",
             "price": 189,
@@ -55,7 +64,16 @@
             "categoryName": "Закуски"
         },
         {
-            "productUID": 7,
+            "productUID": 8,
+            "name": "Салат Цезарь",
+            "description": "Цыпленок, свежие листья салата айсберг, томаты черри, сыры чеддер и пармезан, соус цезарь, пшеничные гренки, итальянские травы",
+            "price": 209,
+            "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/bf15b0d548f64555b99259cf9fee5fcd_584x584.jpeg",
+            "categoryUID": 2,
+            "categoryName": "Закуски"
+        },
+        {
+            "productUID": 9,
             "name": "Манго-шейк",
             "description": "Жаркое тропическое лето в стакане — молочный коктейль с манговым пюре",
             "price": 199,
@@ -64,7 +82,7 @@
             "categoryName": "Напитки"
         },
         {
-            "productUID": 8,
+            "productUID": 10,
             "name": "Айс капучино",
             "description": "Холодный напиток для тех, кто даже в жару наслаждается кофе. В составе мороженое, эспрессо и молоко",
             "price": 199,
@@ -73,7 +91,16 @@
             "categoryName": "Напитки"
         },
         {
-            "productUID": 9,
+            "productUID": 11,
+            "name": "Клубничный молочный коктейль",
+            "description": "Не важно, какое время года на улице, этот коктейль с клубничным сиропом вернет вас в лето с одного глотка",
+            "price": 199,
+            "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/743d0934d8b248548fd59ede5c15f339_584x584.jpeg",
+            "categoryUID": 3,
+            "categoryName": "Напитки"
+        },
+        {
+            "productUID": 12,
             "name": "Ветчина и грибы",
             "description": "Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус",
             "price": 345,
@@ -82,13 +109,67 @@
             "categoryName": "Пицца"
         },
         {
-            "productUID": 10,
+            "productUID": 13,
             "name": "Пеперони фреш",
             "description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус",
             "price": 289,
             "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/a55f23f650344e1bb5bd43c7fc6e82fc_584x584.png",
             "categoryUID": 4,
             "categoryName": "Пицца"
+        },
+        {
+            "productUID": 14,
+            "name": "Чизбургер-пицца",
+            "description": "Мясной соус болоньезе, соус бургер, маринованные огурчики, томаты, красный лук, моцарелла",
+            "price": 419,
+            "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/96a0e1c862034d9ea9b9729514e53934_584x584.png",
+            "categoryUID": 4,
+            "categoryName": "Пицца"
+        },
+        {
+            "productUID": 15,
+            "name": "Цыплёнок ранч",
+            "description": "Цыпленок, ветчина, соус ранч, моцарелла, томаты, чеснок",
+            "price": 469,
+            "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/5ac90c81176047ceb1a10f7ed57eef2e_584x584.png",
+            "categoryUID": 4,
+            "categoryName": "Пицца"
+        },
+        {
+            "productUID": 16,
+            "name": "Гавайская",
+            "description": "Ветчина, ананасы, моцарелла, фирменный томатный соус",
+            "price": 419,
+            "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/edd589e51e394a79ab2996e6a06415ec_584x584.png",
+            "categoryUID": 4,
+            "categoryName": "Пицца"
+        },
+        {
+            "productUID": 17,
+            "name": "Чизкейк Нью-Йорк",
+            "description": "Мы перепробовали тысячу десертов и наконец нашли любимца гостей — нежнейший творожный чизкейк",
+            "price": 139,
+            "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/fe7603c35d9c4429b41e0d72e176f691_1875x1875.png",
+            "categoryUID": 5,
+            "categoryName": "Десерты"
+        },
+        {
+            "productUID": 18,
+            "name": "Додо тарт",
+            "description": "Сладкое безумие: шоколодная корзинка с морковно-творожной начинкой, медом, грецкими орехами и цитрусами",
+            "price": 169,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/6dd52d088264447da1e3479d92830781_584x584.webp",
+            "categoryUID": 5,
+            "categoryName": "Десерты"
+        },
+        {
+            "productUID": 19,
+            "name": "Маффин Соленая карамель",
+            "description": "Раз откусить — навсегда полюбить! Оцените яркое сочетание соленой карамели и арахиса",
+            "price": 99,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/c3687909a9cf4064aabc5b07a166e848_1875x1875.webp",
+            "categoryUID": 5,
+            "categoryName": "Десерты"
         }
     ]
 }
