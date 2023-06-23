@@ -36,6 +36,9 @@
 		FD21DB1E2A44A4AC003466B4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21DB1D2A44A4AC003466B4 /* CartViewController.swift */; };
 		FD21DB202A44A4C3003466B4 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21DB1F2A44A4C3003466B4 /* ContactsViewController.swift */; };
 		FD21DB222A44ACE0003466B4 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21DB212A44ACE0003466B4 /* DataModels.swift */; };
+		FD21DB242A44D423003466B4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21DB232A44D422003466B4 /* NetworkManager.swift */; };
+		FD21DB262A45BD06003466B4 /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21DB252A45BD06003466B4 /* NetworkModels.swift */; };
+		FD21DB292A45BF3D003466B4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FD21DB282A45BF3D003466B4 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,8 @@
 		FD21DB1D2A44A4AC003466B4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		FD21DB1F2A44A4C3003466B4 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		FD21DB212A44ACE0003466B4 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		FD21DB232A44D422003466B4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FD21DB252A45BD06003466B4 /* NetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD21DABD2A44581A003466B4 /* SnapKit in Frameworks */,
+				FD21DB292A45BF3D003466B4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +139,7 @@
 		FD21DAB82A4457B3003466B4 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				FD21DB2A2A45C2B3003466B4 /* Network */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -199,6 +206,15 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
+		FD21DB2A2A45C2B3003466B4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FD21DB232A44D422003466B4 /* NetworkManager.swift */,
+				FD21DB252A45BD06003466B4 /* NetworkModels.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,6 +233,7 @@
 			name = DeliveryTestApp;
 			packageProductDependencies = (
 				FD21DABC2A44581A003466B4 /* SnapKit */,
+				FD21DB282A45BF3D003466B4 /* Alamofire */,
 			);
 			productName = DeliveryTestApp;
 			productReference = FD21DA9D2A44575D003466B4 /* DeliveryTestApp.app */;
@@ -248,6 +265,7 @@
 			mainGroup = FD21DA942A44575D003466B4;
 			packageReferences = (
 				FD21DABB2A44581A003466B4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FD21DB272A45BF3D003466B4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = FD21DA9E2A44575D003466B4 /* Products */;
 			projectDirPath = "";
@@ -284,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD21DB242A44D423003466B4 /* NetworkManager.swift in Sources */,
 				FD21DB0D2A447548003466B4 /* Fonts.swift in Sources */,
 				FD21DB222A44ACE0003466B4 /* DataModels.swift in Sources */,
 				FD21DAA52A44575D003466B4 /* ViewController.swift in Sources */,
@@ -291,6 +310,7 @@
 				FD21DAAB2A44575D003466B4 /* DeliveryTestApp.xcdatamodeld in Sources */,
 				FD21DB1C2A44A4A1003466B4 /* ProfileViewController.swift in Sources */,
 				FD21DB202A44A4C3003466B4 /* ContactsViewController.swift in Sources */,
+				FD21DB262A45BD06003466B4 /* NetworkModels.swift in Sources */,
 				FD21DB112A4478D1003466B4 /* ALConstants.swift in Sources */,
 				FD21DAA12A44575D003466B4 /* AppDelegate.swift in Sources */,
 				FD21DB1E2A44A4AC003466B4 /* CartViewController.swift in Sources */,
@@ -534,6 +554,14 @@
 				minimumVersion = 5.6.0;
 			};
 		};
+		FD21DB272A45BF3D003466B4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -541,6 +569,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FD21DABB2A44581A003466B4 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		FD21DB282A45BF3D003466B4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD21DB272A45BF3D003466B4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 
